@@ -19,6 +19,8 @@ import urllib.request
 import dotenv
 import telegram.ext as tg
 
+run(["chmod", "+x", "extract"])
+
 from pyrogram import Client
 
 if os.path.exists("FuZionXLogs.txt"):
