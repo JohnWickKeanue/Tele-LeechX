@@ -82,7 +82,7 @@ async def youtube_dl_call_back(bot, update):
     await update.message.edit_caption(caption="**Trying To Download.... Please wait..**")
 
     tmp_directory_for_each_user = os.path.join(
-        DOWNLOAD_LOCATION, str(update.message.message_id)
+        DOWNLOAD_LOCATION, str(update.message.id)
     )
     if not os.path.isdir(tmp_directory_for_each_user):
         os.makedirs(tmp_directory_for_each_user)
