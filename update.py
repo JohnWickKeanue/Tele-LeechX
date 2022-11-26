@@ -24,7 +24,7 @@ basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
 load_dotenv('config.env', override=True)
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', "https://github.com/JohnWickKeanue/Tele-LeechX")
-UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', "h-code")
+UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', "master")
 try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
