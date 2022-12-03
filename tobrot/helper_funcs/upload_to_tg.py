@@ -85,9 +85,9 @@ async def upload_to_tg(
     file_size = os.path.getsize(local_file_name)
 
     caption_str = ""
-    DEF_CAPTION_MSG = f"<{CAP_STYLE}>"
+    DEF_CAPTION_MSG = f"<{b}>"
     DEF_CAPTION_MSG += base_file_name
-    DEF_CAPTION_MSG += f"</{CAP_STYLE}>"
+    DEF_CAPTION_MSG += f"</{b}>"
 
     caption = CAP_DICT.get(from_user, "") 
     CUSTOM_CAPTION = caption 
@@ -168,7 +168,7 @@ async def upload_to_tg(
             ba_se_file_name = os.path.basename(local_file_name)
             await i_m_s_g.edit_text(
                 f"<b><i>🎯Detected File Size: {humanbytes(os.path.getsize(local_file_name))} </i></b>\n"
-                f"📬<code>{ba_se_file_name}</code><i><b> splitted into {number_of_files} Files🗃.</b></i>\n"
+                f"📬<b>{ba_se_file_name}</b><i><b> splitted into {number_of_files} Files🗃.</b></i>\n"
                 "<i><b>📤Trying to upload to Telegram📤, Now...</b></i>"
             )
             for le_file in totlaa_sleif:
@@ -418,7 +418,7 @@ async def upload_single_file(
                     chat_id=int(PRM_LOG),
                     document=local_file_name,
                     thumb=thumb,
-                    caption=f"<code>{os.path.basename(local_file_name)}</code>",
+                    caption=f"<b>{os.path.basename(local_file_name)}</b>",
                     parse_mode=enums.ParseMode.HTML,
                     disable_notification=True,
                     progress=prog.progress_for_pyrogram,
@@ -443,7 +443,7 @@ async def upload_single_file(
                 chat_id=int(LEECH_LOG),
                 document=local_file_name,
                 thumb=thumb,
-                caption=f"<code>{base_file_name}</code>\n\n♨️ 𝕌𝕡𝕝𝕠𝕒𝕕𝕖𝕕 𝔹𝕪 @FXTorrentz ♨️",
+                caption=f"<b>{base_file_name}</b>",
                 parse_mode=enums.ParseMode.HTML,
                 disable_notification=True,
             )
@@ -465,7 +465,7 @@ async def upload_single_file(
                             chat_id=i, 
                             document=sent_message.document.file_id,
                             thumb=thumb,
-                            caption=f"<code>{base_file_name}</code>\n\n♨️ 𝕌𝕡𝕝𝕠𝕒𝕕𝕖𝕕 𝔹𝕪 @FXTorrentz ♨️",
+                            caption=f"<b>{base_file_name}</b>",
                             parse_mode=enums.ParseMode.HTML
                         )
                 except Exception as err:
