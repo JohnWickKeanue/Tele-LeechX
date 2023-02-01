@@ -21,8 +21,8 @@ import telegram.ext as tg
 
 from pyrogram import Client
 
-if os.path.exists("FuZionXLogs.txt"):
-    with open("FuZionXLogs.txt", "r+") as f_d:
+if os.path.exists("KUMBHIPAAKAMLogs.txt"):
+    with open("KUMBHIPAAKAMLogs.txt", "r+") as f_d:
         f_d.truncate(0)
 
 # the logging things >>>>>>>>>>>
@@ -32,7 +32,7 @@ logging.basicConfig(
     datefmt="%d-%b-%y %H:%M:%S",
     handlers=[
         RotatingFileHandler(
-            "FuZionXLogs.txt", maxBytes=50000000, backupCount=10
+            "KUMBHIPAAKAMLogs.txt", maxBytes=50000000, backupCount=10
         ),
         logging.StreamHandler(),
     ],
@@ -59,13 +59,13 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
 '''
 
 # The Telegram API things >>>>>>>>>>>
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5139162631:AAHGWHHbnbu7k5jOjXW-axcNuJcSRpBktr4")
-APP_ID = os.environ.get("APP_ID", "6878048")
-API_HASH = os.environ.get("API_HASH", "3833ae3a7415af46df46a83a3ba2c432")
-OWNER_ID = int(os.environ.get("OWNER_ID", "1242011540"))
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "2104810690:AAGDGT69jw3gJlbvMemUKHV624PQCSRR85k")
+APP_ID = os.environ.get("APP_ID", "18729425")
+API_HASH = os.environ.get("API_HASH", "a1ba6712731b122ca1f8f08a4e1b9cb7")
+OWNER_ID = int(os.environ.get("OWNER_ID", "2068711372"))
 
 # Authorised Chat Functions >>>>>>>>>>>
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001270496331 -1001508663868").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001495649313").split()]
 SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
 AUTH_CHANNEL.append(OWNER_ID)
 AUTH_CHANNEL += SUDO_USERS
@@ -175,7 +175,7 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 
 <b>⚡𝐒𝐭𝐨𝐫𝐲 𝐋𝐢𝐧𝐞: </b><code>{plot}</code>
 
-⚡️𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 :  @FuZionX </i>
+⚡️𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 :  @Kumbhipaakam </i>
 
 ⚡️✅ 𝑪𝒍𝒊𝒄𝒌 𝑫𝒐𝒘𝒏 𝒂𝒏𝒅 𝑺𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝑩𝒐𝒕 𝒕𝒐 𝑮𝒆𝒕 𝒕𝒉𝒆 𝑭𝒊𝒍𝒆 ✅ !! ⬇️ ⬇️""")
 
