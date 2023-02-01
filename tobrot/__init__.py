@@ -4,7 +4,7 @@
 #
 # Copyright 2022 - TeamTele-LeechX
 # 
-# This is Part of < https://github.com/5MysterySD/Tele-LeechX >
+# This is Part of < https://github.com/tmadminz/Tele-LeechX >
 # All Right Reserved 
 
 
@@ -59,7 +59,7 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
 '''
 
 # The Telegram API things >>>>>>>>>>>
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "2104810690:AAGDGT69jw3gJlbvMemUKHV624PQCSRR85k")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "2100625760:AAHJo8R-YCwdYGZa9TIh8K8aFXzL4wZ6E10")
 APP_ID = os.environ.get("APP_ID", "18729425")
 API_HASH = os.environ.get("API_HASH", "a1ba6712731b122ca1f8f08a4e1b9cb7")
 OWNER_ID = int(os.environ.get("OWNER_ID", "2068711372"))
@@ -141,8 +141,8 @@ HELP_COMMAND = os.environ.get("HELP_COMMAND", "help")
 SPEEDTEST = os.environ.get("SPEEDTEST", "speedtest")
 TSEARCH_COMMAND = os.environ.get("TSEARCH_COMMAND", "tshelp")
 MEDIAINFO_CMD = os.environ.get("MEDIAINFO_CMD", "mediainfo")
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "@FuZionX")
-CAP_STYLE = os.environ.get("CAP_STYLE", "code")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "@Kumbhipaakam")
+CAP_STYLE = os.environ.get("CAP_STYLE", "b")
 BOT_NO = os.environ.get("BOT_NO", "")
 
 #Bot Command [Token Utils]  >>>>>>>>>>>
